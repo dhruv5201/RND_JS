@@ -1,20 +1,20 @@
-//import { sum } from './math';
-const {sum, mult, subs, devide} = require ('./math')
-//const add = (a,b) => a + b;
+//const {sum, mult , subs , devide} = require ('./math1')
+const mathFunctions = require ('./math')
+
 
 test('Sum of 2 number : ' , () => {
-    expect (sum(5 , 5 )).toBe(10)
+    expect (mathFunctions.sum(5 , 5 )).toBe(10)
 })
 
 test('Miltiplicatioin of 2 number : ' , () => {
-    expect (mult(5 , 5 )).toBe(25)
+    expect (mathFunctions.mult(5 , 5 )).toBe(25)
 })
 
 test('Sub of 2 number : ' , () => {
-    expect (subs(10 , 5 )).toBe(5)
+    expect (mathFunctions.subs(10 , 20 )).toBe(-10)
 })
 
 test('Devision of 2 number : ' , () => {
-    expect (devide(10 , 5 )).toBe(2)
+    expect (mathFunctions.devide(10 , 5 )).toBe(2)
 })
 
